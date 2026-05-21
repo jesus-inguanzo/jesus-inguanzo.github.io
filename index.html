@@ -10,10 +10,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Changed from height to min-height to accommodate extra images */
             background-color: #0f172a;
             color: #f8fafc;
             margin: 0;
+            padding: 2rem 0; /* Adds some breathing room at the top and bottom */
         }
         .container {
             text-align: center;
@@ -30,14 +31,23 @@
             height: auto;
             border-radius: 8px;
             margin-top: 1.5rem;
+            margin-bottom: 0.5rem; /* Prevents stacked images from touching */
             border: 2px solid #38bdf8;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- The cat Image Tag -->
+        <h1>My Images</h1>
+        
+        <!-- Existing Cat Image -->
         <img src="cat.jpg" alt="Cat">
+        
+        <!-- New JPEG Image -->
+        <img src="IMG_1320.jpeg" alt="Beautiful Landscape">
+        
+        <!-- New GIF Image -->
+        <img src="IMG_1323.gif" alt="Funny Animation">
     </div>
 </body>
 </html>
